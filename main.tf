@@ -4,7 +4,7 @@ provider "aws" {
 
 # Create an EC2 instance
 resource "aws_instance" "web" {
-  ami           = "ami-08718895af4dfa033"  # Use the latest Ubuntu AMI ID
+  ami           = "ami-0dee22c13ea7a9a67"  # Use the latest Ubuntu AMI ID
   instance_type = "t2.micro"              # Instance type
   tags = {
     Name = "Mumbai-linux-EC2-Instance"  # Tag the instance
