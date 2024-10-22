@@ -28,7 +28,7 @@ output "instance_public_ip" {
 terraform {
   backend "s3" {
     bucket         = "samplebuckt00" 
-    key            = "samplebuckt00/terraform.tfstate" #terraform.tfstate is compulsory file 
+    key            = "terraform.tfstate" 
     region         = "ap-south-1" 
     encrypt        = true
     dynamodb_table = "terraform-lock-table" 
