@@ -1,7 +1,5 @@
 provider "aws" {
   region = "ap-south-1"  # Specify the Mumbai region
-  access_key = var.access
-  secret_key = var.access
 }
 
 # Create an EC2 instance
