@@ -11,6 +11,13 @@ resource "aws_instance" "web" {
   }
   vpc_security_group_ids = ["sg-05cd9bab43a70250e"]
   key_name = "keypairbylearnjan"
+  user_data = <<-EOF
+              #!/bin/bash
+              apt update -y
+              apt install docker.io -y
+              usermod -a -G docker ubuntu
+              docker run -d -p 8010:8080 akshay0909/blogapp:latest
+              EOF
 }
 
 #output
