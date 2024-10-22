@@ -13,10 +13,10 @@ resource "aws_instance" "web" {
   key_name = "keypairbylearnjan"
   user_data = <<-EOF
               #!/bin/bash
-              apt update -y
-              apt install docker.io -y
-              usermod -a -G docker ubuntu
-              docker run -d -p 8010:8080 akshay0909/blogapp:latest
+              sudo apt update -y
+              sudo apt install docker.io -y
+              sudo usermod -a -G docker ubuntu
+              sudo docker run -d -p 8010:8080 akshay0909/blogapp:latest
               EOF
 }
 
