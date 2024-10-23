@@ -38,11 +38,10 @@ metadata:
   name: samplesvc
   namespace: samplens
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     version: v1
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 31000
 ...
