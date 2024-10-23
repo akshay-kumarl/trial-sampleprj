@@ -10,7 +10,7 @@ metadata:
   name: sampledeploy
   namespace: samplens
 spec:
-  replicas: 3
+  replicas: 4
   strategy:
     type: RollingUpdate
     rollingUpdate:
