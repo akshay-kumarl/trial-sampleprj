@@ -16,7 +16,7 @@ pipeline {
 
         stage('kubernetes'){
             steps{
-               sh 'kubectl apply -f ./manifest/*.yml'
+               sh 'kubectl apply -f ./manifests/*.yml'
             }
         }
     }
