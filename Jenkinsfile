@@ -17,6 +17,7 @@ pipeline {
         stage('kubernetes'){
             steps{
                sh 'kubectl apply -f ./manifests/*.yml'
+                sh 'kubectl get pods'
             }
         }
     }
