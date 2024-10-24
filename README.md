@@ -26,3 +26,9 @@ my-realtime-project/
 └── README.md                  # Project documentation
 
 ```
+
+---
+
+ terraform apply -f ./samplegitlab/*  <br/>
+ docker build -t mysample:v1 -f ./samplegitlab/Dockerfile . <br/>
+ kubectl apply -f ./sample/sa.yml
